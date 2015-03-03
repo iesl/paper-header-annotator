@@ -1,4 +1,3 @@
-This is your new Play application
-=================================
+Paper Header Annotator
 
-This file will be packaged with your application, when using `activator dist`.
+An annotation tool for labeling the headers of academic papers
