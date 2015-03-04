@@ -1,0 +1,47 @@
+/*var labelColors = {*/
+/*"author": "red",*/
+/*"title": "blue",*/
+/*"email": "green",*/
+/*"abstract": "orange",*/
+/*"institution": "cyan",*/
+/*"address": "magenta"*/
+/*};*/
+
+#author {
+    color: red;
+}
+#title {
+    color: blue;
+}
+#email {
+    color: green;
+}
+#abstract {
+    color: orange;
+}
+#institution {
+    color: cyan;
+}
+#address {
+    color: magenta;
+}
+#curr-label {
+    position: fixed;
+    margin: 50px;
+    font-size: 3em;
+}
+#label-selection {
+    position: fixed;
+    margin: 150px 50px 50px 50px;
+    font-size: 1.5em;
+    outline: black dotted medium;
+    padding: 10px;
+}
+button {
+    float: left;
+    font-size: 1.5em;
+    margin: 5px;
+}
+svg {
+    float: right;
+}

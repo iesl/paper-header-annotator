@@ -8,14 +8,23 @@
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
         <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
         <script src="@routes.Assets.at("javascripts/jquery-2.1.3.min.js")" type="text/javascript"></script>
-        <script src="@routes.Assets.at("javascripts/jquery.svg.min.js")" type="text/javascript"></script>
         <script src="@routes.Assets.at("javascripts/paper.js")" type="text/javascript"></script>
     </head>
     <body>
         <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
         <button id="list-button">list</button><button id="clear-button">clear selected</button><button id="refresh-button">refresh</button>
-        <div id="author">author:</div>
-        <div id="title">title:</div>
+        <button id="undo-button">undo</button>
+        <div id="curr-label">annotating: <div class="inner"></div></div>
+        <form id="label-selection">
+            <input type="radio" name="label" value="author"><span id="author">author</span><br>
+            <input type="radio" name="label" value="title"><span id="title">title</span><br>
+            <input type="radio" name="label" value="email"><span id="email">email</span><br>
+            <input type="radio" name="label" value="abstract"><span id="abstract">abstract</span><br>
+            <input type="radio" name="label" value="institution"><span id="institution">institution</span><br>
+            <input type="radio" name="label" value="address"><span id="address">address</span><br>
+            <input type="submit" value="submit">
+        </form>
+
         @content
     </body>
 </html>
